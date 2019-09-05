@@ -1,0 +1,22 @@
+.edittorToggler {
+    display: flex;
+    flex-flow: row;
+}
+
+.edittorToggler button{
+    color: #fafafa;
+    border: none;
+    border-bottom: none;
+    outline: none;
+    height: 32px;
+    
+}
+
+.tab{
+    background: #202020;
+}
+
+.generateButton {
+    margin-left: 32px;
+    background: #147707;
+}

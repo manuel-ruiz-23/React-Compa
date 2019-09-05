@@ -1,17 +1,33 @@
 {
   "name": "react-compa",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.1",
+  "private": false,
+  "license": "(ISC OR GPL-3.0)",
+  "homepage": "https://github.com/manuel-ruiz-23/mr-classroom-react",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manuel-ruiz-23/mr-classroom-react"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "babel": {
+    "presets": [
+      "@babel/react"
+    ]
+  },
   "dependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.0",
+    "react-ace": "^7.0.2",
+    "react-dom": "^16.8.0",
     "react-scripts": "3.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "publish:npm": "set NODE_ENV=production && rm -rf dist && mkdir dist && npx babel src/components/compaEditor --out-dir dist --copy-files"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5"
   }
 }
