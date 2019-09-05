@@ -15,7 +15,7 @@ let Toolbar = ({setEditor, generateWebPage, buttonText}) => (
 );
 
 Toolbar.propTypes = {
-    swichEditor: PropTypes.func.isRequired,
+    setEditor: PropTypes.func.isRequired,
     generateWebPage: PropTypes.func.isRequired,
     buttonText: PropTypes.string,  
 };
